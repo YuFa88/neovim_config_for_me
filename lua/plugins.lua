@@ -1,10 +1,27 @@
-vim.cmd([[
-call plug#begin()
-Plug 'neovim/nvim-lspconfig'
-Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'kyazdani42/nivm-web-devicons'
-Plug 'kyazdani42/nvim-tree.lua'
-call plug#end()
-]])
+local packer = require("packer")
+packer.startup(
+  function(use)
+   -- Packer 可以管理自己本身
+   use 'wbthomason/packer.nvim'
+   --主题
+   use ("folke/tokyonight.nvim")
+   -- nvim-tree
+   use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
+   -- bufferline
+    use({ "akinsho/bufferline.nvim", requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" }})
+   -- lualine 
+  use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
+  use("arkav/lualine-lsp-progress")
+   -- 你的插件列表...
+end)
+
+-- 每次保存 plugins.lua 自动安装插件
+pcall(
+  vim.cmd,
+  [[
+    augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+    augroup end
+  ]]
+)
