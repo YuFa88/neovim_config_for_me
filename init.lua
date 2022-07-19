@@ -11,3 +11,6 @@ require("plugin-config.nvim-tree")
 --bufferline插件
 require("plugin-config.bufferline")
 require("plugin-config.lualine")
+require("plugin-config.telescope")
+require("plugin-config.dashboard")
+require("plugin-config.project")
