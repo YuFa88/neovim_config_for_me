@@ -5,6 +5,8 @@
 玩转键盘，纵享丝滑编程体验！（建议使用wezterm虚拟终端）
 
 > 其中wezterm.lua不属于nvim配置，为wezterm的配置，win下放在wezterm.exe同级文件夹下，linux放在~.config下
+>
+> ginit.lua为GUI-nvim配置,建议使用neovide
 
 - 首先先安装neovim（各个平台安装方式不同）
 - 安装一下Nerd fonts字体{https://www.nerdfonts.com/font-downloads}设置为终端字体
