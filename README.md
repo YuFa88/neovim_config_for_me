@@ -2,11 +2,12 @@
 
 ---
 
-玩转键盘，纵享丝滑编程体验！
+玩转键盘，纵享丝滑编程体验！（建议使用wezterm虚拟终端）
 
 - 首先先安装neovim（各个平台安装方式不同）
 - 安装一下Nerd fonts字体{https://www.nerdfonts.com/font-downloads}设置为终端字体
 - 新建 .config/ 文件夹，克隆本gitee在该文件夹下，改名为nvim
+  - win下需设置环境变量XDG_CONFIG_HOME和XDG_DATA_HOME
 - 安装 Packer.nvim 插件管理器
 -  安装`telescope` 插件，其依赖以下项目。
   - [BurntSushi/ripgrep](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2FBurntSushi%2Fripgrep)
