@@ -208,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "E:\\nvim\\config\\nvim-data\\site\\pack\\packer\\start\\vim-vsnip",
     url = "https://github.com/hrsh7th/vim-vsnip"
+  },
+  ["zephyr-nvim"] = {
+    loaded = true,
+    path = "E:\\nvim\\config\\nvim-data\\site\\pack\\packer\\start\\zephyr-nvim",
+    url = "https://github.com/glepnir/zephyr-nvim"
   }
 }
 

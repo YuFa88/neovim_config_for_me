@@ -5,11 +5,15 @@ if not status then
 end
 
 db.custom_footer = {
-  "",
-  "https://gitee.com/yfyfgood/neovim-config-of-yf",
+  "🎉https://gitee.com/yfyfgood/neovim-config-of-yf🎉",
 }
 
 db.custom_center = {
+  {
+    icon = "  ",
+    desc = "PackerSync                          ",
+    action = "PackerSync",
+  },
   {
     icon = "  ",
     desc = "Projects                            ",
@@ -40,16 +44,16 @@ db.custom_center = {
   --   desc = "Change colorscheme                  ",
   --   action = "ChangeColorScheme",
   -- },
-  -- {
-  --   icon = "  ",
-  --   desc = "Edit init.lua                       ",
-  --   action = "edit ~/.config/nvim/init.lua",
-  -- },
-  -- {
-  --   icon = "  ",
-  --   desc = "Find file                           ",
-  --   action = "Telescope find_files",
-  -- },
+  --{
+  --  icon = "  ",
+  --  desc = "Edit init.lua                       ",
+  --  action = "edit ~/.config/nvim/init.lua",
+ -- },
+   {
+     icon = "  ",
+     desc = "Find file                           ",
+     action = "Telescope find_files",
+   },
   -- {
   --   icon = "  ",
   --   desc = "Find text                           ",
@@ -72,7 +76,6 @@ db.custom_header = {
 [[  ██║╚██╗██║╚██╗ ██╔╝██║██║╚██╔╝██║╚════╝ ╚██╔╝  ██╔══╝    ]],
 [[  ██║ ╚████║ ╚████╔╝ ██║██║ ╚═╝ ██║        ██║   ██║       ]],
 [[  ╚═╝  ╚═══╝  ╚═══╝  ╚═╝╚═╝     ╚═╝        ╚═╝   ╚═╝       ]],
-[[                                                           ]],
 [[                                                           ]],
 
     }
