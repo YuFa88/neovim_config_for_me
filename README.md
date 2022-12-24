@@ -10,8 +10,8 @@ wezterm是一个支持多平台的虚拟终端支持用lua语言进行配置，�
 >
 > ginit.lua为GUI-nvim配置,建议使用neovide
 <figure class="half">
-<img src="picture\nvim_in_wezterm.png" alt="nvim_in_wezterm" style="zoom:45%;" />
-<img src="picture\nvim_in_neovide.png" alt="nvim_in_neovide" style="zoom:25%;" />
+<img src="https://gitee.com/yfyfgood/neovim-config-of-yf/raw/master/picture/nvim_in_wezterm.png" alt="nvim_in_wezterm" style="zoom:45%;" />
+<img src="https://gitee.com/yfyfgood/neovim-config-of-yf/raw/master/picture/nvim_in_neovide.png" alt="nvim_in_neovide" style="zoom:25%;" />
 </figure>
 
 
