@@ -1,8 +1,10 @@
-# *y f* 的***neovim***个人配置
+# *y f* 的***neovim***和***wezterm***配置
 
 ---
 
 玩转键盘，纵享丝滑编程体验！（建议使用wezterm虚拟终端）
+
+wezterm是一个支持多平台的虚拟终端支持用lua语言进行配置，而neovim也支持lua语言进行配置。lua语言灵活易用，能让我们按自己的需求和审美进行个性化。
 
 > 其中wezterm.lua不属于nvim配置，为wezterm的配置，win下放在wezterm.exe同级文件夹下，linux放在~.config下
 >
