@@ -5,7 +5,7 @@ if not status then
 end
 
 db.custom_footer = {
-  "🎉https://gitee.com/yfyfgood/neovim-config-of-yf🎉",
+  "🎉https://github.com/YuFa88/neovim_config_for_me🎉",
 }
 
 db.custom_center = {

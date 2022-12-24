@@ -5,7 +5,6 @@ local opt = {noremap =true, silent = true }
 
 --jk跳转到普通模式
 map("i","jk","<Esc>",opt)
-
 -- 取消 s 默认功能
 map("n", "s", "", opt)
 -- windows 分屏快捷键

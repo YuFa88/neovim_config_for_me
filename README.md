@@ -7,6 +7,11 @@
 > 其中wezterm.lua不属于nvim配置，为wezterm的配置，win下放在wezterm.exe同级文件夹下，linux放在~.config下
 >
 > ginit.lua为GUI-nvim配置,建议使用neovide
+<figure class="half">
+<img src="picture\nvim_in_wezterm.png" alt="nvim_in_wezterm" style="zoom:45%;" />
+<img src="picture\nvim_in_neovide.png" alt="nvim_in_neovide" style="zoom:25%;" />
+</figure>
+
 
 - 首先先安装neovim（各个平台安装方式不同）
 - 安装一下Nerd fonts字体{https://www.nerdfonts.com/font-downloads}设置为终端字体
