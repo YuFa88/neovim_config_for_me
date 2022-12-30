@@ -1,42 +1,49 @@
-# *y f* 的***neovim***和***wezterm***配置
+# ***neovim*** and ***wezterm*** configuration of yf
 
 ---
 
-玩转键盘，纵享丝滑编程体验！（建议使用wezterm虚拟终端）
+ Play with the keyboard and enjoy the silky programming experience! (We recommend that you use **wezterm** virtual terminal)
 
-wezterm是一个支持多平台的虚拟终端支持用lua语言进行配置，而neovim也支持lua语言进行配置。lua语言灵活易用，能让我们按自己的需求和审美进行个性化。
+ **wezterm** is a multi-platform virtual terminal that supports configuration in **lua language**, while **neovim** also supports configuration in lua language. **lua language** is flexible and easy to use, which enables us to be personalized according to our own needs and aesthetics.
 
-> 其中wezterm.lua不属于nvim配置，为wezterm的配置，win下放在wezterm.exe同级文件夹下，linux放在~.config下
+> wezterm.lua does not belong to the nvim configuration. It is the wezterm configuration. Under win, it is placed in the wezterm.exe folder, and linux is placed in ~.config
 >
-> ginit.lua为GUI-nvim配置,建议使用neovide
+> ginit.lua is configured for GUI-nvim. We recommend that you use neovide.
 <figure class="half">
 <img src="https://gitee.com/yfyfgood/neovim-config-of-yf/raw/master/picture/nvim_in_wezterm.png" alt="nvim_in_wezterm" style="zoom:45%;" />
 <img src="https://gitee.com/yfyfgood/neovim-config-of-yf/raw/master/picture/nvim_in_neovide.png" alt="nvim_in_neovide" style="zoom:25%;" />
 </figure>
 
 
-- 首先先安装neovim（各个平台安装方式不同）
-- 安装一下Nerd fonts字体{https://www.nerdfonts.com/font-downloads}设置为终端字体
-- 新建 .config/ 文件夹，克隆本gitee在该文件夹下，改名为nvim
-  - win下需设置环境变量XDG_CONFIG_HOME和XDG_DATA_HOME
-- 安装 Packer.nvim 插件管理器
--  安装`telescope` 插件，其依赖以下项目。
-  - [BurntSushi/ripgrep](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2FBurntSushi%2Fripgrep)
-  - [sharkdp/fd](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2Fsharkdp%2Ffd)
+-  Install **neovim** first (different installation methods for each platform)
+-  Install **Nerd fonts font** {https://www.nerdfonts.com/font-downloads}Set to terminal font
+- Create a. **config/**folder, clone the github in this folder, and rename it nvim 
+- - environment variables XDG_CONFIG_HOME and XDG_DATA_HOME must be set in win.
+- Install **Packer.nvim** plug-in manager
+-  Installation `**telescope** `the plug-in, which depends on the following items. 
 
-```
-文件目录构成
+-  [BurntSushi/ripgrep](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2FBurntSushi%2Fripgrep) 
+
+-  [sharkdp/fd](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2Fsharkdp%2Ffd) 
+
+- 
+
+  ## File tree
+
+
+```c++
+//File Directory composition
 ├── LICENSE
 ├── README.md
-├── init.lua
+├── init.lua	//Entry file
 └── lua
     ├── autocmds.lua
-    ├── basic.lua
-    ├── colorscheme.lua
-    ├── keybindings.lua
-    ├── lsp
-    │   ├── cmp.lua
-    │   ├── config
+    ├── basic.lua	//Basic configuration
+    ├── colorscheme.lua		//Color theme
+    ├── keybindings.lua		//Shortcut keys
+    ├── lsp		//lsp-related configuration files
+    │   ├── cmp.lua		//Automatic code completion
+    │   ├── config		//Separate configuration files for servers in various languages.
     │   │   ├── bash.lua
     │   │   ├── emmet.lua
     │   │   ├── html.lua
@@ -46,11 +53,11 @@ wezterm是一个支持多平台的虚拟终端支持用lua语言进行配置，�
     │   │   ├── pyright.lua
     │   │   ├── rust.lua
     │   │   └── ts.lua
-    │   ├── formatter.lua
-    │   ├── null-ls.lua
-    │   ├── setup.lua
-    │   └── ui.lua
-    ├── plugin-config
+    │   ├── formatter.lua		// Independent code formatting.
+    │   ├── null-ls.lua		//Code formatting
+    │   ├── setup.lua		//The configuration of the built-in LSP.
+    │   └── ui.lua		//Enhance built-in LSP features and beautify the UI。
+    ├── plugin-config		//Plug-in configuration file
     │   ├── bufferline.lua
     │   ├── comment.lua
     │   ├── dashboard.lua
@@ -66,13 +73,21 @@ wezterm是一个支持多平台的虚拟终端支持用lua语言进行配置，�
     │   ├── toggleterm.lua
     │   ├── vimspector.lua
     │   └── which-key.lua
-    ├── plugins.lua
-    └── utils
+    ├── plugins.lua		//Manage the installation and uninstallation of plug-ins
+    └── utils		//Input Method switching, special configuration for windows, etc.
         ├── fix-yank.lua
         ├── global.lua
-        └── im-select.lua
+        └── im-select.lua	//Automatic switching input method
 ```
 
+## shortcut keys
 
+`alt+m`：Open the file tree
+`Ctrl+p/Ctrl+f`:Search for files/global search
+`SH `: horizontal split screen `SV `: vertical Split screen (Split Vertically) `SC `Close `so `close Others and put `Alt + h/j/k/l `set to jump between windows.
+`Ctrl + up, down, left and right `or `s ` `s. ` `SJ ` `sk `adjust window scale
+`leader + t `open the terminal in the lower window, or `leader + vt `the side window opens the terminal.
+In visual mode `J ` `K `move the code up and down, and add continuous `> `or `< `the indentation code. 
+`Ctrl+u `/ `Ctrl + d `to scroll the code
 
-未完待续......
+To be continued......
