@@ -4,8 +4,9 @@ packer.startup(
    -- Packer 可以管理自己本身
    use 'wbthomason/packer.nvim'
    --主题
+   use("ful1e5/onedark.nvim")
    use("folke/tokyonight.nvim")
-   use({'glepnir/zephyr-nvim',requires = { 'nvim-treesitter/nvim-treesitter', opt = true },})
+   --use({'glepnir/zephyr-nvim',requires = { 'nvim-treesitter/nvim-treesitter', opt = true },})
    -- nvim-tree
    use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
    -- bufferline
